@@ -13,6 +13,6 @@ To process end-user actions in SchedulerControl and save corresponding changes t
 </dxmvvmi:Interaction.Behaviors>
 ````
 
-#### There are two cases when specific logic is required: 
+### There are two cases when specific logic is required: 
 1. When an end-user modifies and/or deletes an occurrence. You do not need to delete anything from the database in this case. Instead, you need to add a record about such an exception. In this example, this logic is implemented in *MainViewModel*'s **SaveChanges** and **AppointmentRemoved** methods.
 2. When an end-user deletes a recurrent item. At this moment, SchedulerControl deletes all exceptions (modified and deleted occurrences) related to this recurrent item. Therefore, you need to explicitly do the same in the database. You can see the related implementation in the *MainViewModel*'s **SaveChanges** method. 
