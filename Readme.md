@@ -2,7 +2,7 @@
 
 This example illustrates how you bind your Scheduler Control to data from an SQLite database. When you run this project on your side for the first time, the code from the App's constructor should create the database.
 
-To process end-user actions in SchedulerControl and save corresponding changes to the database, you need to process corresponding [SchedulerControl events]([https://docs.devexpress.com/Win10Apps/DevExpress.UI.Xaml.Scheduler.SchedulerControl._events](https://docs.devexpress.com/Win10Apps/DevExpress.UI.Xaml.Scheduler.SchedulerControl._events)). To do this in an MVVM way, you can implement commands in your ViewModel and use our **EventToCommand** class:
+To process end-user actions in SchedulerControl and save corresponding changes to the database, you need to process corresponding [SchedulerControl events](https://docs.devexpress.com/Win10Apps/DevExpress.UI.Xaml.Scheduler.SchedulerControl._events). To do this in an MVVM way, you can implement commands in your ViewModel and use our **EventToCommand** class:
 
 ````xaml
 <dxmvvmi:Interaction.Behaviors>
